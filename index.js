@@ -21,7 +21,7 @@ function checkFormInput() {
         return false;
         }
 
-    if (x == 'admin@admin' && y == 'admin'){
+    if (x == 'admin@admin.com' && y == 'admin'){
         window.location.replace("ToDoList.html");
         return false;
     } else {
