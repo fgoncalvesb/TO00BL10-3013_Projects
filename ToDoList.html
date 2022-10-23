@@ -9,6 +9,8 @@
     </head>
     <body id="mainBody">
 
+        <div class="box">
+
         <h1>Your To-do list</h1>
             
         <form name="insertTaskForm" action="#" onsubmit="return validateNewTask()" 
@@ -27,10 +29,8 @@
             <br>
             <ul id="taskList">
               
-              <!--<li class="completed"><input type="checkbox" id="order0">checkbox 1</li>
-              <li><input type="checkbox" id="order1">checkbox 2</li>
-              <li><input type="checkbox" id="order2">checkbox 3</li>
-              <li><input type="checkbox" id="order3">checkbox 4</li>-->
+              <!--We start with an empty unordered list!-->
+
             </ul>
         </div>
 
@@ -38,32 +38,35 @@
 
     <br><br>
     <label>
-        <button onclick="removeItems()">Remove selected items</button> 
+        <button onclick="removeItems()" class="regularButtons">Remove selected items</button> 
         <span id="removeItemsFeedback"></span>
-    </label>
-    <label>
-        <button onclick="localstorageSave()" class="rightButtons" id="saveButton">Save to-do list in localstorage</button>
-        <span id="localstorageSaveFeedback"></span>
     </label>
     <br><br>
     <label>
-        <button onclick="completeItems()">Mark / Unmark as completed</button> 
+        <button onclick="completeItems()" class="regularButtons">Mark / Unmark as completed</button> 
         <span id="completeItemsFeedback"></span>
+    </label>
+    <br><br>
+    <label>
+        <button onclick="filterItems()" class="regularButtons">Filter completed tasks</button>
+        <span id="filteredItemsFeedback"></span>
+    </label>
+    <br><br>
+    <label>
+        <button onclick="unfilterItems()" class="regularButtons">Unfilter all tasks</button>
+        <span id="filteredItemsFeedback"></span>
+    </label>
+    <br>
+    <br>
+    <label>
+        <button onclick="localstorageSave()" class="rightButtons" id="saveButton">Save to-do list in localstorage</button>
+        <span id="localstorageSaveFeedback"></span>
     </label>
     <label>
         <button onclick="localstorageRemove()" class="rightButtons" id="clearButton">Remove list from localstorage</button> 
         <span id="localstorageRemoveFeedback"></span>
     </label>
-    <br><br>
-    <label>
-        <button onclick="filterItems()">Filter completed tasks</button>
-        <span id="filteredItemsFeedback"></span>
-    </label>
-    <br><br>
-    <label>
-        <button onclick="unfilterItems()">Unfilter all tasks</button>
-        <span id="filteredItemsFeedback"></span>
-    </label>
+    </div>
 
     </body>
 </html>
