@@ -1,0 +1,30 @@
+#checkboxes label {
+    float: left;
+  }
+ 
+  /*
+  #checkboxes ul {
+    margin: 0;
+    list-style: none;
+    float: left;
+  }
+  */
+
+  .completed {
+
+    text-decoration:line-through;
+    
+    /* Becomes gray and more trapsarent*/
+    color: rgba(0, 0, 0, 0.5);
+
+    visibility: visible;
+
+  }
+
+  .filtered {
+    visibility: hidden;
+  }
+
+  .rightButtons {
+    float: right
+  }

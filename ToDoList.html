@@ -1,0 +1,69 @@
+<!doctype html>
+<HTML lang="en">
+	<head>
+		<title>Welcome to the To-do application!</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="ToDoList.css">
+        <script src="ToDoList.js"></script>
+
+    </head>
+    <body id="mainBody">
+
+        <h1>Your To-do list</h1>
+            
+        <form name="insertTaskForm" action="#" onsubmit="return validateNewTask()" 
+                method="post">
+
+                <label>New task: <br>
+                    <input type="text" name="newTask">
+                    <input type="submit" value="Add task">
+                    <span id="newTaskFeedback"></span>
+                </label>
+        
+
+        <div id="checkboxes">
+            <br>
+            <label>To do list!</label>
+            <br>
+            <ul id="taskList">
+              
+              <!--<li class="completed"><input type="checkbox" id="order0">checkbox 1</li>
+              <li><input type="checkbox" id="order1">checkbox 2</li>
+              <li><input type="checkbox" id="order2">checkbox 3</li>
+              <li><input type="checkbox" id="order3">checkbox 4</li>-->
+            </ul>
+        </div>
+
+    </form>
+
+    <br><br>
+    <label>
+        <button onclick="removeItems()">Remove selected items</button> 
+        <span id="removeItemsFeedback"></span>
+    </label>
+    <label>
+        <button onclick="localstorageSave()" class="rightButtons" id="saveButton">Save to-do list in localstorage</button>
+        <span id="localstorageSaveFeedback"></span>
+    </label>
+    <br><br>
+    <label>
+        <button onclick="completeItems()">Mark / Unmark as completed</button> 
+        <span id="completeItemsFeedback"></span>
+    </label>
+    <label>
+        <button onclick="localstorageRemove()" class="rightButtons" id="clearButton">Remove list from localstorage</button> 
+        <span id="localstorageRemoveFeedback"></span>
+    </label>
+    <br><br>
+    <label>
+        <button onclick="filterItems()">Filter completed tasks</button>
+        <span id="filteredItemsFeedback"></span>
+    </label>
+    <br><br>
+    <label>
+        <button onclick="unfilterItems()">Unfilter all tasks</button>
+        <span id="filteredItemsFeedback"></span>
+    </label>
+
+    </body>
+</html>

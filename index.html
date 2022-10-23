@@ -1,0 +1,34 @@
+<!doctype html>
+<HTML lang="en">
+	<head>
+		<title>Project 1 - My to-do list!</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="index.css">
+        <script src="index.js"></script>
+        <hr />
+        <p>Moi!, this is project 1 for Web Content Management Systems R0330-3009. This project is a simple application that manages a To-do list in native JS.</p>
+        <hr/>
+    </head>
+    <body id="mainBody">
+
+        <h1>Please first login into the application!</h1>
+            
+        <form name="myForm" action="#" onsubmit="return checkFormInput()" 
+                method="post">
+
+                <label>Email address:<br>
+                    <input type="text" name="email" required>
+                    <span id="emailFeedback"></span>
+                </label>
+                <br><br>
+                <label>Password:<br>
+                    <input type="text" name="password" required>
+                    <span id="passwordFeedback"></span>
+                </label>
+
+                <br><br><br>
+                <input type="submit" value="Login">
+            </form>
+
+    </body>
+</html>
