@@ -51,22 +51,33 @@ function countItems(listID){
 
 function removeItems(){
 
+    // I create an empty array of the items that I'm going to then remove
+    let arr = [];
+
     let ul = document.getElementById("taskList");
     let listItems = ul.getElementsByTagName("li");
 
+    // Items removed counter
     let removedAmount = 0;
 
+    // I fill the array with the items that are checked and increase my counter
     for (let i = 0; i < listItems.length; i++) {
 
-        let elementInList = document.getElementById('listInputOrder'+(i+1));
+        newOrder = parseInt([i])+1;
+        let elementInList = document.getElementById('listInputOrder'+newOrder);
 
         if (elementInList.checked === true){
             let parentUL = elementInList.parentElement
-            parentUL.parentElement.removeChild(parentUL);
+            arr.push(parentUL);
             removedAmount++;
         }
         
       }
+
+    // I now start removing the items
+      for (let i = 0; i < arr.length; i++) {
+        arr[i].parentElement.removeChild(arr[i]);
+    }
       
     // Then I need to redefine my IDs for the new order
     for (let i = 0; i < listItems.length; i++) {
@@ -175,6 +186,9 @@ function localstorageSave(){
 
     setTimeout(function(){ buttonReset('saveButton'); }, 2000);
 
+    document.getElementById('completeItemsFeedback').innerHTML="";
+    document.getElementById('removeItemsFeedback').innerHTML="";
+    document.getElementById('newTaskFeedback').innerHTML="";
 }
 
 function localstorageRemove(){
@@ -188,6 +202,9 @@ function localstorageRemove(){
 
     setTimeout(function(){ buttonReset('clearButton'); }, 2000);
 
+    document.getElementById('completeItemsFeedback').innerHTML="";
+    document.getElementById('removeItemsFeedback').innerHTML="";
+    document.getElementById('newTaskFeedback').innerHTML="";
 }
 
 function buttonReset(buttonID){
