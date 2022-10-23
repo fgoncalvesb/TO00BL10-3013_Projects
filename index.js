@@ -26,6 +26,7 @@ function checkFormInput() {
         return false;
     } else {
         alert("Wrong username or password");
+        return false;
     }
 
     
