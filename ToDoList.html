@@ -9,11 +9,13 @@
     </head>
     <body id="mainBody">
 
+        <!--box div is for CSS of the form and the title-->
         <div class="box">
 
         <h1>Your To-do list</h1>
-            
-        <form name="insertTaskForm" action="#" onsubmit="return validateNewTask()" 
+        
+        <!--This is a normal form, similar to the ones we did for the workshops. I added some "spans" for the error messages-->
+        <form name="insertTaskForm" action="#" onsubmit="return validateAndAddNewTask()" 
                 method="post">
 
                 <label>New task: <br>
@@ -22,7 +24,7 @@
                     <span id="newTaskFeedback"></span>
                 </label>
         
-
+        <!--Div containing the whole list and a label that I used as a title-->
         <div id="checkboxes">
             <br>
             <label>To do list!</label>
@@ -37,6 +39,8 @@
     </form>
 
     <br><br>
+
+    <!--List of buttons. I used classes for CSS and created just some IDs for some specific cases. Each button has its Span-->
     <label>
         <button onclick="removeItems()" class="regularButtons">Remove selected items</button> 
         <span id="removeItemsFeedback"></span>
