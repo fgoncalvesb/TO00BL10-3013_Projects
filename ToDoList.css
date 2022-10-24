@@ -2,14 +2,18 @@
   background-color:bisque;
 }
 
+/* style for the list and its title*/
 #checkboxes label {
     float: left;
   }
 
+  /* style for the whole list*/
 #taskList{
   font-family: "Lucida Console", "Courier New", monospace;
   }
 
+
+  /* style for completed items*/
   .completed {
     text-decoration:line-through;
    
@@ -18,11 +22,12 @@
     visibility: visible;
   }
 
+  /* style for filtered items*/
   .filtered {
     visibility: hidden;
   }
 
-
+/* === Contact form ===*/
   .box{
     grid-area: box;
     position: absolute;
@@ -82,13 +87,14 @@
       text-transform: uppercase;
   }
 
-  .regularButtons {
-    background-color: white; 
-    color: black; 
-    border: 2px solid #008CBA;
-  }
+/* Styiles for some buttons, including effect when you hover over them*/
+ .regularButtons {
+   background-color: white; 
+   color: black; 
+   border: 2px solid #008CBA;
+ }
   
-  .regularButtons:hover {
-    background-color: #008CBA;
-    color: white;
-  }
+.regularButtons:hover {
+   background-color: #008CBA;
+   color: white;
+ }
