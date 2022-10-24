@@ -4,7 +4,26 @@ This is a repository for projects of the Dynamic Web Applications with Javascrip
 Project 1: To-do List
 By Facundo Goncalves Borrega
 
+## Netift URL
+- https://lucky-florentine-c4ed8a.netlify.app/
+
 ---
+
+## Application description
+
+This applications is a to-do list. First, you enter to a log-in screen, where you have to enter a valid e-mail and password in order to continue:
+- e-mail: admin@admin.com
+- password: admin
+
+Then you access the to-do list, which has the following functionalities:
+- You can add items to it
+- You can remove items
+- You can set items as completed
+- You can filter and unfilter completed items
+- You can save list to localstorage
+- You can empty your localstorage (remove the saved list)
+
+## Criteria for assignemnt
 
 1. Todo -list
 Design and implement a simple TODO application. Below is an example that you can use as a basis for brainstorming.
