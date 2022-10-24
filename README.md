@@ -23,6 +23,10 @@ Then you access the to-do list, which has the following functionalities:
 - You can save list to localstorage
 - You can empty your localstorage (remove the saved list)
 
+## Self evaluation:
+
+I consider that my application is good enough as to have 30 points. Maybe I could have made a better UI , but nonetheless I think it looks good enough.
+
 ## Criteria for assignemnt
 
 1. Todo -list
